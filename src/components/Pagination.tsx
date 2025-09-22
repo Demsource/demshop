@@ -25,7 +25,7 @@ const Pagination: React.FC<PaginationPropsInterface> = ({
   const totalPages = Math.ceil(totalProducts / pageSize);
   const allPageNums = new Array(totalPages)
     .fill(0)
-    .map((num, index) => index + 1);
+    .map((_, index) => index + 1);
 
   return (
     <div className="flex items-center gap-2 justify-center mt-8">

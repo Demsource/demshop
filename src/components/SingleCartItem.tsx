@@ -1,6 +1,5 @@
 import React from "react";
 import { type CartItem } from "../store/slices/cartSlice";
-import { MdDeleteForever } from "react-icons/md";
 
 interface SingleCartItemInterface {
   item: CartItem;

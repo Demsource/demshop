@@ -61,7 +61,7 @@ const Orders: React.FC = () => {
               </tr>
             </thead>
             <tbody>
-              {orders.map((order) => (
+              {orders.map((order: any) => (
                 <tr key={order.id} className="border-t border-[#0B3954]">
                   <td className="px-4 py-2 text-sm text-[#0B3954]">
                     {new Date(order.created_at).toLocaleString()}

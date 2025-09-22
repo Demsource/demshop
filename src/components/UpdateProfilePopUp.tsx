@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { tryUpdatingUser, type UserInterface } from "../services/api/user";
+import { tryUpdatingUser } from "../services/api/user";
 import { useDispatch, useSelector } from "react-redux";
 import type { RootState } from "../store";
 import { updateProfile } from "../store/slices/authSlice";

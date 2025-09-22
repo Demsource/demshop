@@ -103,7 +103,7 @@ const App: React.FC = () => {
         try {
           const response = await tryGettingCartItems(token);
 
-          const data = response.map((item) => ({
+          const data = response.map((item: any) => ({
             id: item.id,
             productId: item.cartProduct.id,
             name: item.cartProduct.title,
@@ -128,7 +128,7 @@ const App: React.FC = () => {
         try {
           const response = await tryGettingWishlistItems(token);
 
-          const data = response.map((item) => ({
+          const data = response.map((item: any) => ({
             id: item.id,
             productId: item.product_id,
             title: item.likedProduct.title,
